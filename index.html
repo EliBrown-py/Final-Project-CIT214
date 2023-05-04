@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> US States</title>
+    <link rel="icon" type="image/x-icon" href="images/US_flag.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+      rel="stylesheet"/>
+      <link
+      rel="stylesheet/less"
+      type="text/css"
+      href="less/styles.less"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src = "enabler.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="images/US_flag.png"
+                  style="width: 50px; height: 50px; border-radius: 25px"
+              /> US STATES</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search State" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                  </form>
+                <ul class="navbar-nav mx-5  ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://en.wikipedia.org/wiki/U.S._state" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                  </li>
+                </ul>  
+            </div>
+        </div>
+      </nav>
+      <br><br><br>
+      <div class="container">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="images/usastates.png" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="images/mountrush.jpg" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption mt-4">
+              <p class="text-uppercase fs-3 mt-5">Mount Rushmore National Memorial</p>
+              <p class="display-1 fw-bolder text-capitalize">South Dakota</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://images.unsplash.com/photo-1600870003315-e1c945702030?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption mt-6">
+              <p class="text-uppercase fs-3 mt-5">US CONGRESS</p>
+              <p class="display-1 fw-bolder text-capitalize">Washinton DC</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="container">
+        <div class="content">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/SweetHomeHero.jpg" alt="Alabama State">
+                </div>
+                <h4>Alabama</h4>
+                <p>Capital: Montgomery<br>
+                  Landmass:  52,420 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Alabama State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Alabamastate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Alabamastate" tabindex="-1" aria-labelledby="Alabamastate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Alabamastate">
+                              State of Alabama
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Aviation and Aerospace.</li>
+                                <li>Attractions: US space and Rocket center</li>
+                                <li>Population: 5.04 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1574788901656-6a9ee34a3fa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Alaska Mountains">
+                </div>
+                <h4>Alaska</h4>
+                <p>Capital: Juneau<br>
+                  Landmass:  665,384.04.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of Alaska"
+                      data-bs-toggle="modal"
+                      data-bs-target="#AlaskaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="AlaskaState" tabindex="-1" aria-labelledby="AlaskaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="AlaskaState">
+                              State of Alaska
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: The oil and gas industry is the largest component of Alaska's economy</li>
+                                <li>Attractions: Denali National Park & Preserve</li>
+                                <li>Population: 732,673 Thousand (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://plus.unsplash.com/premium_photo-1661925249607-9262896b6a69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Arizona Desert">
+                </div>
+                <h4>Arizona</h4>
+                <p>Capital: Phoenix<br>
+                  Landmass:  113,990 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of arizona"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Arizonastate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Arizonastate" tabindex="-1" aria-labelledby="Arizonastate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Arizonastate">
+                              State of Arizona
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Arizona is a leader in the country's aerospace and defense industry.</li>
+                                <li>Attractions: The Grand Canyon</li>
+                                <li>Population: 7.276 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://img-aws.ehowcdn.com/1280x/www.onlyinyourstate.com/wp-content/uploads/2022/07/feature-5.jpg" alt="Arkansas">
+                </div>
+                <h4>Arkansas</h4>
+                <p>Capital: Little Rock<br>
+                  Landmass:  53,179 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of Arkansas"
+                      data-bs-toggle="modal"
+                      data-bs-target="#AnkansasState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="AnkansasState" tabindex="-1" aria-labelledby="AnkansasState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="AnkansasState">
+                              State of Arkansas
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture is Arkansas largest industry.</li>
+                                <li>Attractions: Hot Springs National Park</li>
+                                <li>Population: 3.026 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="Califonia bridge">
+                </div>
+                <h4>Califonia</h4>
+                <p>Capital: Sacramento<br>
+                  Landmass:  163,695 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of Califonia"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Califoniastate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Califoniastate" tabindex="-1" aria-labelledby="Califoniastate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Califoniastate">
+                              State of Califonia
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture, film industry.</li>
+                                <li>Attractions: Yosemite National Park,<br>Hollywood, Death valley, LA. </li>
+                                <li>Population: 39.24 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1620415406067-68f6d8072fec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Colorado welcome sign">
+                </div>
+                <h4>Colorado</h4>
+                <p>Capital: Denver<br>
+                  Landmass: 104,094 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Colorodo state"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Coloradostate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Coloradostate" tabindex="-1" aria-labelledby="Coloradostate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Coloradostate">
+                              State of Colorado
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Manufacturing, Mining and Argicuture are the bigest industry in colorado .</li>
+                                <li>Attractions: Hike Rocky Mountain National Park</li>
+                                <li>Population: 5.812 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1592933395627-321d00e7e9ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Connecticut light house">
+                </div>
+                <h4>Connecticut</h4>
+                <p>Capital: Hartford<br>
+                  Landmass:  5,544 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="state of Connecticut"
+                      data-bs-toggle="modal"
+                      data-bs-target="#connecticutstate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="connecticutstate" tabindex="-1" aria-labelledby="connecticutstate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="connecticutstate">
+                              State of Connecticut
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Aerospace manufacturing and shipbuilding.</li>
+                                <li>Attractions: Mystic Seaport Museum, Mystic</li>
+                                <li>Population: 3.606 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1564501911891-74a27d949ee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Delaware Skyscrapers">
+                </div>
+                <h4>Delaware</h4>
+                <p>Capital: Dover<br>
+                  Landmass:  2,489 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Importance of Sematic Tags"
+                      data-bs-toggle="modal"
+                      data-bs-target="#DelawareState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="DelawareState" tabindex="-1" aria-labelledby="DelawareState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="DelawareState">
+                              State of Delaware
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry:  chemical manufacturing, including pharmaceuticals, industrial chemicals and plastics.</li>
+                                <li>Attractions: Air Mobility Command Museum</li>
+                                <li>Population: 1.003 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1577910148049-1e6526ef78bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Florida state picture">
+                </div>
+                <h4>Florida</h4>
+                <p>Capital: Tallahassee<br>
+                  Landmass: 53,997 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="state of Florida"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Floridastate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Floridastate" tabindex="-1" aria-labelledby="Floridastate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Floridastate">
+                              State of Florida
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Tourism is florida major industry</li>
+                                <li>Attractions: Walt Disney World, Universal Studios,Sea World. </li>
+                                <li>Population: 21.78 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1575917649705-5b59aaa12e6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Geogia State">
+                </div>
+                <h4>Georgia</h4>
+                <p>Capital: Atlanta<br>
+                  Landmass:  59,425 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of Georgia"
+                      data-bs-toggle="modal"
+                      data-bs-target="#GeogiaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="GeogiaState" tabindex="-1" aria-labelledby="GeogiaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="GeogiaState">
+                              State of Georgia
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Advanced manufacturing, automotive, aerospace, and food processing.</li>
+                                <li>Attractions: Stone Mountain Park, Atlanta Botanical Garden, Georgia Aquarium</li>
+                                <li>Population: 10.8 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1599027619757-d2a6c129e388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Hawaii aloha picture">
+                </div>
+                <h4>Hawaii</h4>
+                <p>Capital: Honolulu<br>
+                  Landmass: 10,931 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of Hawaii"
+                      data-bs-toggle="modal"
+                      data-bs-target="#HawaiiState"
+                    >Learn more</a>
+          
+                    <!-- Modal for Hawaii tags -->
+                    <div class="modal fade" id="HawaiiState" tabindex="-1" aria-labelledby="HawaiiState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="HawaiiState">
+                              State of Hawaii
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Tourism is Hawaii's largest industry.</li>
+                                <li>Attractions: Hawaii Volcanoes National Park, Waimea Canyon State Park, The Gorgeous Waikiki Beach.</li>
+                                <li>Population: 1.442 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1601564921647-b446839a013f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Residential Areas Idaho">
+                </div>
+                <h4>Idaho</h4>
+                <p>Capital: Boise<br>
+                  Landmass: 83,569 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of Idaho"
+                      data-bs-toggle="modal"
+                      data-bs-target="#IdahoState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="IdahoState" tabindex="-1" aria-labelledby="IdahoState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="IdahoState">
+                              State of Idaho
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agricuture is the major industry in Idaho.</li>
+                                <li>Attractions: Craters Of The Moon National Monument, Shoshone Falls Park</li>
+                                <li>Population: 1.901 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1613218507619-b2b5e7e390d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Chicago downtown">
+                </div>
+                <h4>Illinois</h4>
+                <p>Capital: Springfield<br>
+                  Landmass: 57,913 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Importance of Sematic Tags"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Illinois"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Illinois" tabindex="-1" aria-labelledby="Illinois"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Illinois">
+                              State of Illinois
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry:  Advanced manufacturing, agribusiness, energy/electric vehicles.</li>
+                                <li>Attractions: Millennium Park, Navy Pier, The Art Institute of Chicago.</li>
+                                <li>Population: 12.67 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1584385971010-71c147ba5dbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80" alt="Indianapolis downtown">
+                </div>
+                <h4>Indiana</h4>
+                <p>Capital: Indianapolis<br>
+                  Landmass:  36,419 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of indiana"
+                      data-bs-toggle="modal"
+                      data-bs-target="#IndianaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="IndianaState" tabindex="-1" aria-labelledby="IndianaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="IndianaState">
+                              State of Indiana
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Iron and steel manufacturing, Argricuture.</li>
+                                <li>Attractions: Children's Museum of Indianapolis, Indianapolis Zoo, The Indy 500.</li>
+                                <li>Population: 6.806 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1599739336568-b42af4996938?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="Iowa corn fields sunset">
+                </div>
+                <h4>Iowa</h4>
+                <p>Capital: Des Moines<br>
+                  Landmass:  56,272 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Importance of Sematic Tags"
+                      data-bs-toggle="modal"
+                      data-bs-target="#IowaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="IowaState" tabindex="-1" aria-labelledby="IowaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="IowaState">
+                              State of Iowa
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Iowa is widly known for its leadion position in agricultural sector, particularly corn, soybean, pork and egg production.</li>
+                                <li>Attractions: National Mississippi River Museum and Aquarium, Lost Island Waterpark</li>
+                                <li>Population: 3.193 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1536622638768-9403a9d35a1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Kansas downtown">
+                </div>
+                <h4>Kansas</h4>
+                <p>Capital: Topeka<br>
+                  Landmass:  82,278 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Stateof kansas"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Stateofkansas"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Stateofkansas" tabindex="-1" aria-labelledby="Stateofkansas"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Stateofkansas">
+                              State of Kansas
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry:  Manufacturing, Agriculture and services.</li>
+                                <li>Attractions:The Wichita Gardens, Cosmosphere(Science Museum)</li>
+                                <li>Population:  2.935 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1615825742158-5aac7849e4a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Kentucky Bridge">
+                </div>
+                <h4>Kentucky</h4>
+                <p>Capital: Frankfort<br>
+                  Landmass: 40,407  sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="State of Kentucky tags"
+                      data-bs-toggle="modal"
+                      data-bs-target="#KentuckyState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="KentuckyState" tabindex="-1" aria-labelledby="KentuckyState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="KentuckyState">
+                              State of Kentucky
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Manufacturing is the largest single contributor to Kentucky's economy.</li>
+                                <li>Attractions: Mammoth Cave National Park, Newport Aquarium.</li>
+                                <li>Population:  4.509 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1586974325246-05d48d665f24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Downtown Louisiana">
+                </div>
+                <h4>Louisiana</h4>
+                <p>Capital:  Baton Rouge<br>
+                  Landmass:  52,378 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Louisiana State Sematic tags"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Stateoflouisiana"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Stateoflouisiana" tabindex="-1" aria-labelledby="Stateoflouisiana"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Stateoflouisiana">
+                              State of Louisiana
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Chemical, petroleum, and coal products are Louisiana's leading manufactures.</li>
+                                <li>Attractions: The National WWII Museum, Mardi Gras World(Art Museum) </li>
+                                <li>Population: 4.624 million (2021) (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1576787161665-3bb199f86d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Maine Light house">
+                </div>
+                <h4>Maine</h4>
+                <p>Capital: Agusta<br>
+                  Landmass:  35,379 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Maine Sematic tag"
+                      data-bs-toggle="modal"
+                      data-bs-target="#MaineState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="MaineState" tabindex="-1" aria-labelledby="MaineState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MaineState">
+                              State of Maine
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Includes Forest Products, Life Sciences, Marine/Aquaculture, Food/Agriculture, and Outdoor Recreation.</li>
+                                <li>Attractions: Acadia National Park, Portland Head Light</li>
+                                <li>Population: 1.372 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1592945615326-8f16af789a75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="Maryland State">
+                </div>
+                <h4>Maryland</h4>
+                <p>Capital: Annapolis<br>
+                  Landmass:  12,405 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Maryland "
+                      data-bs-toggle="modal"
+                      data-bs-target="#MarylandState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="MarylandState" tabindex="-1" aria-labelledby="MarylandState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MarylandState">
+                              State of Maryland
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry:Aerospace and Defense, Biotechnology and Life Sciences</li>
+                                <li>Attractions: National Aquarium in Baltimore, Assateague Island National Seashore, Inner Harbor in Baltimore</li>
+                                <li>Population: 6.165 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1570122712585-b7cff982ebc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Massachusetts state">
+                </div>
+                <h4>Massachusetts</h4>
+                <p>Capital: Boston<br>
+                  Landmass: 10,554 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Sematic tag for Massachusetts"
+                      data-bs-toggle="modal"
+                      data-bs-target="#MassachusettsState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="MassachusettsState" tabindex="-1" aria-labelledby="MassachusettsState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MassachusettsState">
+                              State of Massachusetts
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Education, Finance and Healthcare are the major industry in Massachusetts </li>
+                                <li>Attractions: Freedom Trail, Fenway Park, Cape cod.</li>
+                                <li>Population: 6.985 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1605934414604-d4f92e5ed51b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1614&q=80" alt="Michagan state picture">
+                </div>
+                <h4>Michigan</h4>
+                <p>Capital: Lansing<br>
+                  Landmass: 96,713 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Michigan state"
+                      data-bs-toggle="modal"
+                      data-bs-target="#MichaganState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="MichaganState" tabindex="-1" aria-labelledby="MichaganState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MichaganState">
+                              State of Michigan
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Manufacturing, Tourism and Agriculture.</li>
+                                <li>Attractions: Henry Ford Museum of American Innovation, Sleeping Bear Dunes National Lakeshore</li>
+                                <li>Population: 10.05 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1535082049017-5a7b43f3bcef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Minnisota downtown picture">
+                </div>
+                <h4>Minnesota</h4>
+                <p>Capital: St. Paul<br>
+                  Landmass: 86,935 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Minnesota"
+                      data-bs-toggle="modal"
+                      data-bs-target="#MinnesotaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="MinnesotaState" tabindex="-1" aria-labelledby="MinnesotaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MinnesotaState">
+                              State of Minnesota
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: The largest industries by revenue in Minnesota are Health & Medical Insurance.</li>
+                                <li>Attractions: Mall of America, Minneapolis Institute of Art, Itasca State Park.</li>
+                                <li>Population:  5.707 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1592860071323-6d8632626f14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Mississipi River">
+                </div>
+                <h4>Mississippi</h4>
+                <p>Capital: Jackson<br>
+                  Landmass: 48,431 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="STate of Mississipi"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Mississipi"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Mississipi" tabindex="-1" aria-labelledby="Mississipi"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Mississipi">
+                              State of Mississippi
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture is Mississippi's number one industry.</li>
+                                <li>Attractions: Elvis Presley Birthplace, Vicksburg National Military Park</li>
+                                <li>Population: 2.95 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1514893011-72dfa15bd29c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1634&q=80" alt="Missouri Senate House">
+                </div>
+                <h4>Missouri</h4>
+                <p>Capital: Jefferson City<br>
+                  Landmass: 69,707 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Missouri State sematic Tag"
+                      data-bs-toggle="modal"
+                      data-bs-target="#MissouriState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="MissouriState" tabindex="-1" aria-labelledby="MissouriState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MissouriState">
+                              State of Missouri
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry:  Agriculture, Steel, Automotive, Electronics.</li>
+                                <li>Attractions: The Gateway Arch, STL Zoo, Missouri Botanical Garden</li>
+                                <li>Population: 6.168 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1590443921114-64251e241f33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Montana Mountains">
+                </div>
+                <h4>Montana</h4>
+                <p>Capital: Helena<br>
+                  Landmass: 147,039 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Montana state Sematic Tags"
+                      data-bs-toggle="modal"
+                      data-bs-target="#MontanaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="MontanaState" tabindex="-1" aria-labelledby="MontanaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MontanaState">
+                              State of Montana
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture, Mining, Healthcare, Forestry, Service, and Energy production.</li>
+                                <li>Attractions:Glacier National Park, Big Sky Resort.</li>
+                                <li>Population: 1.104 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1601995163168-0894a017d6d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Nebraska corn fields">
+                </div>
+                <h4>Nebraska</h4>
+                <p>Capital: Lincoln<br>
+                  Landmass: 77,347 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label=" Neberaska State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#NebraskaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="NebraskaState" tabindex="-1" aria-labelledby="NebraskaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Ariainwebpages">
+                              State of Nebraska
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture is the #1 industry in Nebraska and cattle production represents the largest segment of the industry.</li>
+                                <li>Attractions: Omaha's Henry Doorly Zoo and Aquarium, The Durham Museum, Carhenge</li>
+                                <li>Population: 1.964 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/flagged/photo-1585766850532-cdc0d9a3b36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="Nevada Desert Mountains">
+                </div>
+                <h4>Nevada</h4>
+                <p>Capital: Carson City<br>
+                  Landmass: 110,571 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Nevada State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#NevadaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="NevadaState" tabindex="-1" aria-labelledby="NevadaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="NevadaState">
+                              State of Nevada
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Aerospace and defense, Agriculture, Information technology, energy and health care.</li>
+                                <li>Attractions:Red Rock Canyon National Conservation Area, Hoover Dam, Valley of Fire State Park</li>
+                                <li>Population: 3.144 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1516458819443-0f257d640de9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Church View New Hampshire">
+                </div>
+                <h4>New Hampshire</h4>
+                <p>Capital: Concord<br>
+                  Landmass: 9,349 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="New Hampshire State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#NewhampshireState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="NewhampshireState" tabindex="-1" aria-labelledby="NewhampshireState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="NewhampshireState">
+                              State of New Hampshire
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Manufacturing, Technology, Hospitality and Healthcare..</li>
+                                <li>Attractions: Story Land, Santa's Village, Strawbery Banke Museum</li>
+                                <li>Population: 1.389 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1556&q=80" alt="Downtown New Jersey">
+                </div>
+                <h4>New Jersey</h4>
+                <p>Capital: Trenton<br>
+                  Landmass: 8,722 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="New Jersey State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#NewJerseyState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="NewJerseyState" tabindex="-1" aria-labelledby="NewJerseyState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="NewJerseyState">
+                              State of New Jersey
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Pharmaceuticals, life sciences, financial services.</li>
+                                <li>Attractions:  Atlantic City, Adventure Aquarium, Liberty State Park.</li>
+                                <li>Population: 9.267 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1562705859-72842cf88fd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80" alt="New Mexico Mountains">
+                </div>
+                <h4>New Mexico</h4>
+                <p>Capital: Santa Fe<br>
+                  Landmass: 121,590 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="New Mexico State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Newmexicostate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Newmexicostate" tabindex="-1" aria-labelledby="Newmexicostate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Newmexicostate">
+                              State of New Mexico
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Oil Drilling & Gas Extraction, Scientific Research & Development, Tourism.</li>
+                                <li>Attractions: White Sands National Park, Carlsbad Caverns National Park, Albuquerque International Balloon Fiesta </li>
+                                <li>Population: 2.116 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1499&q=80" alt="Statue Of Liberty">
+                </div>
+                <h4>New York</h4>
+                <p>Capital: Albany<br>
+                  Landmass: 54,554 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="New York State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Newyork"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Newyork" tabindex="-1" aria-labelledby="Newyork"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Newyork">
+                              New York State
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Financial services, healthcare, professional and business services.</li>
+                                <li>Attractions: Statue of Liberty, Central Park, Empire State Building</li>
+                                <li>Population:  19.84 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1507810670121-b08efd787765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="Picture of charlotte">
+                </div>
+                <h4>North Carolina</h4>
+                <p>Capital: Raleigh<br>
+                  Landmass: 53,819 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="North Carolina"
+                      data-bs-toggle="modal"
+                      data-bs-target="#NorthCarolinaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="NorthCarolinaState" tabindex="-1" aria-labelledby="NorthCarolinaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="NorthCarolinaState">
+                              State of North Carolina
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Food Processing & Manufacturing, Funiture, Textiles and Tourisim.</li>
+                                <li>Attractions: Biltmore, Chimney Rock at Chimney Rock State Park</li>
+                                <li>Population: 10.55 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1601834697342-bd16f0a41178?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="North Dakota fields">
+                </div>
+                <h4>North Dakota</h4>
+                <p>Capital: Bismarck<br>
+                   Landmass: 70,698 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="North Dakota"
+                      data-bs-toggle="modal"
+                      data-bs-target="#NorthDakotaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="NorthDakotaState" tabindex="-1" aria-labelledby="NorthDakotaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="NorthDakotaState">
+                              State of North Dakota
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Argricuture, Energy Industry and Tourisim.</li>
+                                <li>Attractions: Theodore Roosevelt National Park, Fort Abraham Lincoln State Park </li>
+                                <li>Population: 774, 948 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1494303110424-f25a258d2e4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="downtown columbus Ohio">
+                </div>
+                <h4>Ohio</h4>
+                <p>Capital: Columbus<br>
+                  Landmass: 44,825 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Ohio State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#OhioState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="OhioState" tabindex="-1" aria-labelledby="OhioState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Ariainwebpages">
+                              State of Ohio
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Aviation and Aerospace.</li>
+                                <li>Attractions: National Museum of the US Air Force, Ceder Point(Amusement Park), Cleveland Museum of Art</li>
+                                <li>Population: 11.78 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1594480355356-8b9833059231?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Oklahoma City">
+                </div>
+                <h4>Oklahoma</h4>
+                <p>Capital: Oklahoma City <br>
+                  Landmass: 69,898 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Oklahoma State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#OklahomaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="OklahomaState" tabindex="-1" aria-labelledby="OklahomaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="OklahomaState">
+                              State of Oklahoma
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture and Biosciences is one of Oklahoma's key industry sectors and includes food and fertilizer manufacturing.</li>
+                                <li>Attractions: Oklahoma City National Memorial & Museum, Oklahoma City Zoo. </li>
+                                <li>Population: 3.987 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1601698832159-665cbefd11da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="Oregon river">
+                </div>
+                <h4>Oregon</h4>
+                <p>Capital: Salem<br>
+                  Landmass: 98,378 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Oregon state"
+                      data-bs-toggle="modal"
+                      data-bs-target="#OregonState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="OregonState" tabindex="-1" aria-labelledby="OregonState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="OregonState">
+                              State of Oregon
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture, forestry, and fishing.</li>
+                                <li>Attractions: Crater Lake National Park, Portland Japanese Garden, Columbia River Gorge National Scenic Area</li>
+                                <li>Population: 4.246 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1555424221-250de2a343ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1462&q=80" alt="DOwntown Pennsylvania">
+                </div>
+                <h4>Pennsylvania</h4>
+                <p>Capital: Harrisburg<br>
+                  Landmass: 46,054 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Pennsylvania State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Pennsylvaniastate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Pennsylvaniastate" tabindex="-1" aria-labelledby="Pennsylvaniastate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Pennsylvaniastate">
+                              State of Pennsylvania
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Advanced Manufacturing, Food Processing & Manufacturing, Energy Production & Transition.</li>
+                                <li>Attractions: Hershey Park, Presque Isle State Park.</li>
+                                <li>Population: 12.96 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1585694813849-abaabaa01ac6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1095&q=80" alt="Proviednce Rhode Island">
+                </div>
+                <h4>Rhode Island</h4>
+                <p>Capital: Providence<br>
+                  Landmass: 1,544 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Rhode Island"
+                      data-bs-toggle="modal"
+                      data-bs-target="#RhodeIslandState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="RhodeIslandState" tabindex="-1" aria-labelledby="RhodeIslandState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="RhodeIslandState">
+                              Rhode Island State
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Biomedicine, Defense shipbuilding, maritime products and manufacturing.</li>
+                                <li>Attractions: Roger Williams Park Zoo, The Breakers Art Museum. </li>
+                                <li>Population: 1.096 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1533852990198-bdd4082bf8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80" alt="South Carolina Bridge">
+                </div>
+                <h4>South Carolina</h4>
+                <p>Capital:  Columbia<br>
+                  Landmass:  32,020 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Rhode Island"
+                      data-bs-toggle="modal"
+                      data-bs-target="#SouthCarolina"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="SouthCarolina" tabindex="-1" aria-labelledby="SouthCarolina"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="SouthCarolina">
+                              State of South Carolina
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Tourism, and it's centered around Myrtle Beach, Charleston, and Hilton Head Island, is the state's largest industry.</li>
+                                <li>Attractions: Riverbanks Zoo & Garden, Fort Sumter National Monument, Congaree National Park. </li>
+                                <li>Population: 5.191 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1525703925054-e10de7568a5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1610&q=80" alt="South Dakota Farmlanbd">
+                </div>
+                <h4>South Dakota</h4>
+                <p>Capital: Pierre<br>
+                  Landmass: 77,115 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="South Dakota"
+                      data-bs-toggle="modal"
+                      data-bs-target="#SouthDakota"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="SouthDakota" tabindex="-1" aria-labelledby="SouthDakota"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="SouthDakota">
+                              State of South Dakota
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: South dakota is mainly based on agricultural production, but tourism, forestry, and mining are also increasing.</li>
+                                <li>Attractions: Mount Rushmore National Memorial, Custer State Park, Badlands National Park. </li>
+                                <li>Population: 895,376 Thousand (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1556033681-83abea291a96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1564&q=80" alt="Nashville Tennessee Downtown">
+                </div>
+                <h4>Tennessee</h4>
+                <p>Capital: Nashville<br>
+                  Landmass: 42,144 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Tennessee State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#TennesseeState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="TennesseeState" tabindex="-1" aria-labelledby="TennesseeState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="TennesseeState">
+                              State of Tennessee
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Includes  health care, transportation, music and entertainment, banking, and finance.</li>
+                                <li>Attractions: Great Smoky Mountains National Park, Grand Ole Opry, Dollywood(Amusement park). </li>
+                                <li>Population: 6.975 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1557335200-a65f7f032602?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80" alt="Austiin Texas downtown">
+                </div>
+                <h4>Texas</h4>
+                <p>Capital: Austin<br>
+                  Landmass: 268,596 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Texas State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Texas"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Texas" tabindex="-1" aria-labelledby="Texas"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Texas">
+                              State of Texas
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Includes oil and natural gas, aerospace, defense, biomedical research and fuel processing.</li>
+                                <li>Attractions: Space Center Houston, The Alamo, San Antonio River Walk. </li>
+                                <li>Population: 29.53 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1642141166292-64087fbc5f1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Utah welcome sign">
+                </div>
+                <h4>Utah</h4>
+                <p>Capital: Salt Lake City<br>
+                  Landmass: 84,896 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Utah State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#UtahState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="UtahState" tabindex="-1" aria-labelledby="UtahState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="UtahState">
+                               State of Utah
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: coal mining, cattle ranching, salt production.</li>
+                                <li>Attractions: Arches National Park, Zion National Park, Canyonlands National Park.</li>
+                                <li>Population: 3.338 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1599008938301-61c4e98bdd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Sunrise in vermont state">
+                </div>
+                <h4>Vermont</h4>
+                <p>Capital: Montpelier<br>
+                  Landmass: 9,616 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Vermont State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Vermontstate"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="Vermontstate" tabindex="-1" aria-labelledby="Vermontstate"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="Vermontstate">
+                              State of Vermont
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Tourism, manufacturing and agriculture are the major industry in vermont.</li>
+                                <li>Attractions: Killington Ski Resort, Green Mountain National Forest, Montshire Museum of Science. </li>
+                                <li>Population: 645,570 Thousand (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1575474007145-7bc306677fa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Virginia Capitol City">
+                </div>
+                <h4>Virginia</h4>
+                <p>Capital: Richmond<br>
+                  Landmass: 42,774 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Virginia State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#VirginiaState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="VirginiaState" tabindex="-1" aria-labelledby="VirginiaState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="VirginiaState">
+                              Virginia State
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Agriculture, Forestry, And Fishing are virginia's top industry .</li>
+                                <li>Attractions: Shenandoah National Park, Luray Caverns. </li>
+                                <li>Population:  8.642 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1599551528722-6b6d968512a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Mount Rainier, Washington, USA">
+                </div>
+                <h4>Washington</h4>
+                <p>Capital: Olympia<br>
+                  Landmass: 71,303 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Washington State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#WashingtonState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="WashingtonState" tabindex="-1" aria-labelledby="WashingtonState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="WashingtonState">
+                                Washington State
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Aerospace, Agriculture, Food Manufacturing, Clean Technology.</li>
+                                <li>Attractions: Olympic National Park, Space Needle Observation deck, Pike place Market. </li>
+                                <li>Population:  7.739 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Forest in west virginia">
+                </div>
+                <h4>West Virginia</h4>
+                <p>Capital: Charleston<br>
+                  Landmass: 24,231 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="West virginia state"
+                      data-bs-toggle="modal"
+                      data-bs-target="#WestVirginia"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="WestVirginia" tabindex="-1" aria-labelledby="WestVirginia"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="WestVirginia">
+                             West Virginia State
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Mining, Healthcare and Social Assistance, Manufacturing.</li>
+                                <li>Attractions: New River Gorge National Park & Preserve, Harpers Ferry National Historical Park. </li>
+                                <li>Population: 1.783 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1516685927992-05ed120733c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Milwaukee Wisconsin">
+                </div>
+                <h4>Wisconsin</h4>
+                <p>Capital: Madison<br>
+                  Landmass: 65,503 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Wisconsin State"
+                      data-bs-toggle="modal"
+                      data-bs-target="#WisconsonState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="WisconsonState" tabindex="-1" aria-labelledby="WisconsonState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="WisconsonState">
+                              Rhode Island State
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: agriculture, manufacturing, shipping and mining.</li>
+                                <li>Attractions:The House on the Rock, Milwaukee Art Museum, Mitchell Park Domes. </li>
+                                <li>Population: 5.896 million (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://images.unsplash.com/photo-1624375147958-678d727cc0c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Wyoming Mountains">
+                </div>
+                <h4>Wyoming</h4>
+                <p>Capital: Cheyenne<br>
+                  Landmass:  97,818 sq.mi.
+                </p>
+                <div class="btn-group btn-group-justified" aria-label="button group of modals">
+                    <a 
+                      href="#"
+                      class="btn btn-dark"
+                      role="button"
+                      aria-label="Wyoming state"
+                      data-bs-toggle="modal"
+                      data-bs-target="#WyomingState"
+                    >Learn more</a>
+          
+                    <!-- Modal for sametic tags -->
+                    <div class="modal fade" id="WyomingState" tabindex="-1" aria-labelledby="WyomingState"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="WyomingState">
+                             State of Wyoming
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                          </div>
+          
+                          <div class="modal-body">
+                            <ul>
+                                <li>Major Industry: Mining, Agriculture and Tourisim.</li>
+                                <li>Attractions: Yellowstone National Park,  Devils Tower National Monument, Grand Teton National Park. </li>
+                                <li>Population:  578,803  (2021)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+        </div>
+
+      </div> 
+
+    
+      <footer class="pt-3 mt-4 text-muted border-top">
+        © 2023<br><br>
+        Elijah Ibidayo CIT 214 Final Project
+      </footer>
+    </div>
+    </body>
+</html>
